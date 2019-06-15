@@ -14,11 +14,10 @@ services:
     environment:
       WAIT_HOSTS: database:27017
   database:
-    image: mongo:4.0
+    image: postgres
     env_file:
       - ../.env
     volumes:
-      - ".${MONGO_DATA_DIR}:${MONGO_DATA_DIR}"
+      - ".${POSTGRES_DATA_DIR}:${POSTGRES_DATA_DIR}"
     expose:
       - 27017
-    command: "mongod --smallfiles --logpath=${MONGO_LOG_FILE}"

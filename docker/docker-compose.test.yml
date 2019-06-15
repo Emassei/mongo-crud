@@ -7,13 +7,13 @@ services:
       args:
         port: ${PORT}
     env_file:
-      - ../.env
+      - ../postgres.env
     environment:
       WAIT_HOSTS: database-test:27017
   database-test:
     image: postgres
     env_file:
-      - ../.env
+      - ../postgres.env
     volumes:
       - ".${POSTGRES_TEST_DATA_DIR}:${POSTGRES_TEST_DATA_DIR}"
     expose:
