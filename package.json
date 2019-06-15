@@ -1,7 +1,7 @@
 {
-  "name": "mongo-crud",
+  "name": "postgres-crud",
   "version": "1.0.0",
-  "description": "A CRUD api built with MongoDB",
+  "description": "A CRUD api built with Postgres, credit to Joe Cieslik I am using his app and docker scaffolding",
   "main": "index.js",
   "scripts": {
     "test": "docker-compose -f docker/docker-compose.test.yml up --build --abort-on-container-exit",
@@ -10,23 +10,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/torchhound/mongo-crud.git"
+    "url": "tbd"
   },
   "keywords": [
-    "mongodb",
+    "postgres",
     "crud",
     "express"
   ],
-  "author": "Joe Cieslik",
+  "author": "",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/torchhound/mongo-crud/issues"
+    "url": "tbd"
   },
-  "homepage": "https://github.com/torchhound/mongo-crud#readme",
+  "homepage": "tbd",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongodb": "^3.1.8"
+    "pg": "^7.11.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
